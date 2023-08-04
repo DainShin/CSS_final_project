@@ -13,11 +13,11 @@
     box-sizing: border-box;
     font-family: 'Geologica', sans-serif;
     color: #333;
+    font-size:  clamp(1rem, 0.75rem + 1.5vw, 1.8rem);
 }
 
 html {
     font-size: 10px;
-    font-size:  clamp(1rem, 0.75rem + 1.5vw, 1.8rem);
     color: #333;
 }
 
@@ -55,7 +55,6 @@ body {
 .wrap {
     margin: 0 auto;
     background-color: #FFFFFF;
-    padding: 0 5em;
 }
 
 .inner {
@@ -108,8 +107,8 @@ body {
 /* Class Selector */
 
 .wrap {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    /*margin: 0 auto;*/
 }
 
 
@@ -124,7 +123,7 @@ body {
     display: inline-block;
     margin: 0 -.05em;
     animation: loading 1.8s infinite alternate;
-    font-size: calc(4vw + 4vh + 1.8vmin);
+    font-size: 4rem;
     font-weight: 1000;
     color: #bbbbbb;
 }
@@ -147,7 +146,7 @@ body {
 
 .intro-text span:nth-child(6) {
     animation-delay: .6s;
-    color: #2D9CDB;
+
 }
 
 .intro-text span:nth-child(7) {
@@ -156,6 +155,7 @@ body {
 
 .intro-text span:nth-child(8) {
     animation-delay: .8s;
+    color: #2D9CDB;
 }
 
 .intro-text span:nth-child(9) {
@@ -165,6 +165,18 @@ body {
 .intro-text span:nth-child(10) {
     animation-delay: .10s;
 }
+
+.intro-text span:nth-child(11) {
+    animation-delay: .11s;
+}
+
+.intro-text span:nth-child(12) {
+    animation-delay: .12s;
+}
+.intro-text span:nth-child(13) {
+    animation-delay: .13s;
+}
+
 
 @keyframes loading {
     0% { opacity: 1; }
@@ -180,6 +192,7 @@ body {
 
 .type-container {
     position: relative;
+    padding-left: 2em;
 }
 
 .type {
@@ -654,5 +667,5 @@ footer ul li a {
         display: flex;
         flex-direction: row;
     }
-    
+
 }
