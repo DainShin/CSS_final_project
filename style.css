@@ -116,7 +116,7 @@ body {
 /* section 1 -> intro text */
 
 .intro-text {
-    padding: 18em 0 10em 0;
+    padding: 15em 0 10em 0;
     text-align: center;
 }
 
@@ -124,7 +124,7 @@ body {
     display: inline-block;
     margin: 0 -.05em;
     animation: loading 1.8s infinite alternate;
-    font-size: calc(4vw + 4vh + 2vmin);
+    font-size: calc(4vw + 4vh + 1.8vmin);
     font-weight: 1000;
     color: #bbbbbb;
 }
