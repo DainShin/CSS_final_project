@@ -1,12 +1,11 @@
+/* This is web font for the logo-like name in the menu */
 @font-face {
     font-family: logoFont;
     src: url(./assets/ShaquettaTorelly-0WZPd.otf);
 }
 
-/* Generalisation */
-
-/* Universal Selector */
-
+/* Generalisation & Universal Selector */
+/* I used google font('Geologica') for the whole text */
 * {
     padding: 0;
     margin: 0;
@@ -25,13 +24,12 @@ body {
 }
 
 /* Type Selectors */
-
 h3 {
-    font-size: 3.5rem;
+    font-size: clamp(3em, 0.75rem + 1.5vw, 5rem);
 }
 
 h4 {
-    font-size:  clamp(2.5rem, 0.75rem + 1.5vw, 4rem);
+    font-size: clamp(2.5rem, 0.75rem + 1.5vw, 4.5rem);
 }
 
 a,
@@ -40,7 +38,7 @@ span {
 }
 
 p {
-    font-size:  clamp(2.5rem, 0.75rem + 1.5vw, 3.5rem);
+    font-size:  clamp(2.3rem, 0.75rem + 1.5vw, 3.5rem);
 }
 
 a {
@@ -51,10 +49,9 @@ li {
     list-style: none;
 }
 
-
-body {
-    /*background-color: #f9f9f9;*/
-}
+/* Set the margin to make the page put in the center of the page
+   Set background colour
+*/
 
 .wrap {
     margin: 0 auto;
@@ -87,7 +84,6 @@ body {
 }
 
 .logo p a {
-    font-size: 2.8rem;
     font-family: 'logoFont', sans-serif;
 
 }
@@ -112,7 +108,6 @@ body {
 
 .wrap {
     width: 90%;
-    /*margin: 0 auto;*/
 }
 
 
@@ -217,6 +212,7 @@ body {
     text-align: center;
 }
 
+/* Animation for typing effect */
 @keyframes typing {
     0% {
         width: 0%;
@@ -234,7 +230,6 @@ body {
 
 
 /* timeline */
-
 .timeline {
     padding-top: 20em;
     position: relative;
@@ -253,14 +248,12 @@ body {
     margin-left: -3px;
 }
 
-/* Full-width containers */
 .container {
     width: 50%;
     padding: 3em;
     position: relative;
     background-color: inherit;
     min-width: 350px;
-
 }
 
 .container::after {
@@ -299,7 +292,6 @@ body {
 }
 
 /* Pseudo Classes */
-
 .right::before {
     content: " ";
     height: 0;
@@ -324,12 +316,11 @@ body {
     text-align: left;
 }
 
-/**/
+
 
 .intro-text span {
     font-size: calc(4vw + 4vh + 2vmin);
 }
-
 
 .content {
     padding: 1em 1em;
@@ -344,7 +335,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 4.5em;
-
 }
 
 .skill-cont div {
@@ -358,7 +348,8 @@ body {
     width: 100%;
 }
 
-/* span 공통요소 */
+/* Added the animation called stack. */
+
 .skill span {
     display: block;
     height: 3rem;
@@ -372,7 +363,6 @@ body {
 #css {
     width: 60%;
     background-color: #EAEAEA;
-
 }
 
 #python {
@@ -419,7 +409,7 @@ body {
 
 .lang-cont {
     display: grid;
-    grid-template-columns: 1fr;  /* 높이는 다써 */
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 4.5em;
 }
@@ -458,15 +448,13 @@ body {
     background-color: #868684;
 }
 
-/* section 3  */
-/* project */
+/* I used grid for this section */
 
 .section3 {
     padding: 5em 0;
 }
 
 .card span {
-    /*font-size: 1.2rem;*/
     font-size:  clamp(1.2rem, 0.75rem + 1.5vw, 2rem);
     font-weight: bold;
     color: #999;
@@ -502,10 +490,14 @@ body {
     transition: 0.1s;
 }
 
+/* When hover over the images, there will be a shadow */
+
 .card:hover {
     top: -2px;
     box-shadow: 0 4px 5px rgba(0,0,0,.2);
 }
+
+/* I positioned the items in the box by using flex box */
 
 article {
     flex: 1;
@@ -524,6 +516,8 @@ article p {
     background-size: cover;
     background-position: center;
 }
+
+/* The images are not the real one */
 
 .one {
     background-image: url("./assets/programing.jpg");
@@ -546,7 +540,7 @@ article p {
 }
 
 .six {
-    background-image: url("./assets/programing.jpg");
+    background-image: url("./assets/code.png");
 }
 
 /* footer */
@@ -606,7 +600,7 @@ footer ul li a {
 }
 
 
-/* Media Query */
+/* Media Query for the 650px display */
 
 @media screen and (min-width: 65em) {
 
@@ -630,7 +624,7 @@ footer ul li a {
 
 }
 
-
+/* Media Query for the 1100px display */
 
 @media screen and (min-width: 110em) {
 
