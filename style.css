@@ -347,7 +347,6 @@ li {
 }
 
 /* Added the animation called stack. */
-
 .skill span {
     display: block;
     height: 3rem;
@@ -465,7 +464,7 @@ li {
 }
 
 .band {
-    width: 100%;
+    width: 95%;
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
