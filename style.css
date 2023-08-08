@@ -84,7 +84,7 @@ li {
 
 .logo p a {
     font-family: 'logoFont', sans-serif;
-
+     font-size:  clamp(3.8rem, 0.75rem + 1.5vw, 5em);
 }
 
 .menu-bar ul {
@@ -111,7 +111,6 @@ li {
 
 
 /* section 1 -> intro text */
-
 .intro-text {
     padding: 15em 0 10em 0;
     text-align: center;
